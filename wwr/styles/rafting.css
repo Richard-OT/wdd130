@@ -6,7 +6,7 @@ body, h1, h2, h3, p, ul, ol {
 
 /* Global styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Lora';
     line-height: 1.6;
 }
 
