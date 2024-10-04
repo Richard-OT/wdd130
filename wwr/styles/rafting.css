@@ -1,0 +1,132 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffffda;
+    color: #1B263B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #a8ca0f;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #2a0d1b;
+    height: 300px; /* Adjust height based on your design */
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(18, 99, 124, 0.7);
+    padding: 20px;
+    max-width: 80%;
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+    max-width: 30%;
+}
+
+article p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.rafting-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.rafting-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #d3dae2;
+    color: #0D1B2A;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
