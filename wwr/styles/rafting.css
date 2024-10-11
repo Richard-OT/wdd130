@@ -12,31 +12,33 @@ body {
 
 /* Header styles */
 header {
-    background-color: #ffffffda;
-    color: #1B263B;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+    background-color: #ffffffda;
+    padding: 10px;
 }
 
 .logo img {
-    height: 50px; /* Adjust height as needed */
+    height: 60px; /* Adjust as needed */
 }
 
 nav {
     display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* Space between links */
 }
 
 nav a {
     color: #a8ca0f;
     text-decoration: none;
-    padding: 0 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+
 
 /* Main styles */
 .hero {
@@ -63,70 +65,81 @@ nav a:hover {
     font-weight: 900;
 }
 
-article {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(18, 99, 124, 0.7);
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    max-width: 80%;
 }
 
-article img {
-    float: right;
-    margin-left: 20px;
-    max-width: 30%;
+.history h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
-article p {
+.history p {
+    max-width: 800px;
+    text-align: center;
     font-size: 1.2em;
 }
 
-section {
+
+.adventure {
     padding: 20px;
+    text-align: center;
 }
 
-section h2 {
+.adventure h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .rafting-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+}
+
+.rafting-images figure {
+    text-align: center;
 }
 
 .rafting-images img {
     width: 100%;
     height: auto;
-    display: block;
 }
+
+figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
 
 /* Footer styles */
 footer {
     background-color: #d3dae2;
-    color: #0D1B2A;
-    text-align: center;
     padding: 20px;
-    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .social-links {
-    margin-top: 10px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-links a {
     display: inline-block;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
 }
 
-.social-links a:hover {
-    transform: scale(1.2);
+.social-links img {
+    width: 32px;
+    height: 32px;
 }
+
