@@ -1,16 +1,13 @@
-/* Reset default margin and padding */
 body, h1, h2, h3, p, ul, ol {
     margin: 0;
     padding: 0;
 }
 
-/* Global styles */
 body {
-    font-family: 'Roboto', 'san-serif';
+    font-family: 'Roboto', 'sans-serif';
     line-height: 1.6;
 }
 
-/* Header styles */
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -39,8 +36,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-/* Main styles */
 .hero {
     position: relative;
     text-align: center;
@@ -83,7 +78,6 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-
 .adventure {
     padding: 20px;
     text-align: center;
@@ -115,6 +109,67 @@ figcaption {
     color: #333;
 }
 
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.contact-form button {
+    background-color: #a8ca0f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #97b90e;
+}
 
 /* Footer styles */
 footer {
@@ -142,4 +197,3 @@ footer p {
     width: 32px;
     height: 32px;
 }
-
